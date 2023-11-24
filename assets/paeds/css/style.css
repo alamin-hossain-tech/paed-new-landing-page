@@ -1,0 +1,212 @@
+:root {
+  --color-aqua: #80bddd;
+  --color-aqua-dark: #42a6dc;
+  --color-sky: #accbe5;
+  --color-coral-dark: #e9583b;
+  --color-coral-light: rgba(233, 88, 59, 0.5);
+  --color-saffron: #ecaa4b;
+  --color-saffron-dark: #e89217;
+  --color-sunglow: #edc647;
+  --color-sunglow-hover: rgba(237, 198, 71, 0.5);
+  --color-sunglow-bg: "#fcf6e3";
+  --color-body-text: #3c3c3c;
+  --color-black: #000;
+  --color-light: #fcf6e3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  max-width: 90%;
+}
+
+@media (min-width: 576px) {
+  .container-sm,
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1320px;
+  }
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  font-family: "Urbanist", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* hero slider styles  */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mySwiper .swiper-horizontal > .swiper-pagination-bullets {
+  bottom: 30px;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: var(--color-aqua-dark);
+}
+.mySwiper .swiper-pagination-bullet {
+  background: var(--color-aqua-dark);
+  height: 15px;
+  width: 15px;
+}
+
+/* nav menu active styles  */
+.active {
+  background: var(--color-aqua-dark);
+  color: white !important;
+}
+
+.sticky-nav {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  transition: padding 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 35px; /* Adjust the width as needed */
+  height: 35px; /* Adjust the height as needed */
+  background-color: var(--color-aqua-dark);
+  border-radius: 50%; /* Make it fully rounded */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+  color: var(--color-light);
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  display: none;
+}
+
+/* Loader animation */
+/*.pl {*/
+/*  display: block;*/
+/*  width: 6.25em;*/
+/*  height: 6.25em;*/
+/*}*/
+/*.pl__ring,*/
+/*.pl__ball {*/
+/*  animation: ring 2s ease-out infinite;*/
+/*}*/
+/*.pl__ball {*/
+/*  animation-name: ball;*/
+/*}*/
+
+/* Animation */
+/*@keyframes ring {*/
+/*  from {*/
+/*    stroke-dasharray: 0 257 0 0 1 0 0 258;*/
+/*  }*/
+/*  25% {*/
+/*    stroke-dasharray: 0 0 0 0 257 0 258 0;*/
+/*  }*/
+/*  50%,*/
+/*  to {*/
+/*    stroke-dasharray: 0 0 0 0 0 515 0 0;*/
+/*  }*/
+/*}*/
+/*@keyframes ball {*/
+/*  from,*/
+/*  50% {*/
+/*    animation-timing-function: ease-in;*/
+/*    stroke-dashoffset: 1;*/
+/*  }*/
+/*  64% {*/
+/*    animation-timing-function: ease-in;*/
+/*    stroke-dashoffset: -109;*/
+/*  }*/
+/*  78% {*/
+/*    animation-timing-function: ease-in;*/
+/*    stroke-dashoffset: -145;*/
+/*  }*/
+/*  92% {*/
+/*    animation-timing-function: ease-in;*/
+/*    stroke-dashoffset: -157;*/
+/*  }*/
+/*  57%,*/
+/*  71%,*/
+/*  85%,*/
+/*  99%,*/
+/*  to {*/
+/*    animation-timing-function: ease-out;*/
+/*    stroke-dashoffset: -163;*/
+/*  }*/
+/*}*/
