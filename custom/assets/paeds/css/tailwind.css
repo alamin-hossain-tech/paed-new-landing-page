@@ -662,11 +662,6 @@ video {
   z-index: 50;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1044,16 +1039,28 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/assets\/paeds\/home-slider\/slider-1\.png\'\)\] {
-  background-image: url('/assets/paeds/home-slider/slider-1.png');
+.bg-\[url\(\'custom\/assets\/paeds\/home-slider\/slider-1\.png\'\)\] {
+  background-image: url('custom/assets/paeds/home-slider/slider-1.png');
 }
 
-.bg-\[url\(\'\/assets\/paeds\/home-slider\/slider-2\.png\'\)\] {
-  background-image: url('/assets/paeds/home-slider/slider-2.png');
+.bg-\[url\(\'custom\/assets\/paeds\/home-slider\/slider-2\.png\'\)\] {
+  background-image: url('custom/assets/paeds/home-slider/slider-2.png');
 }
 
-.bg-\[url\(\'\/assets\/paeds\/home-slider\/slider-3\.png\'\)\] {
-  background-image: url('/assets/paeds/home-slider/slider-3.png');
+.bg-\[url\(\'custom\/assets\/paeds\/home-slider\/slider-3\.png\'\)\] {
+  background-image: url('custom/assets/paeds/home-slider/slider-3.png');
+}
+
+.bg-\[url\(\'\/custom\/assets\/paeds\/home-slider\/slider-1\.png\'\)\] {
+  background-image: url('/custom/assets/paeds/home-slider/slider-1.png');
+}
+
+.bg-\[url\(\'\/custom\/assets\/paeds\/home-slider\/slider-2\.png\'\)\] {
+  background-image: url('/custom/assets/paeds/home-slider/slider-2.png');
+}
+
+.bg-\[url\(\'\/custom\/assets\/paeds\/home-slider\/slider-3\.png\'\)\] {
+  background-image: url('/custom/assets/paeds/home-slider/slider-3.png');
 }
 
 .bg-\[length\:100\%\] {
@@ -1411,28 +1418,8 @@ video {
     height: 680px;
   }
 
-  .semi\:h-\[100px\] {
-    height: 100px;
-  }
-
-  .semi\:w-\[40\%\] {
-    width: 40%;
-  }
-
-  .semi\:w-\[6\%\] {
-    width: 6%;
-  }
-
   .semi\:w-\[60\%\] {
     width: 60%;
-  }
-
-  .semi\:w-\[55\%\] {
-    width: 55%;
-  }
-
-  .semi\:justify-between {
-    justify-content: space-between;
   }
 
   .semi\:bg-\[length\:70\%\] {
@@ -1466,6 +1453,10 @@ video {
     display: none;
   }
 
+  .md\:h-\[1050px\] {
+    height: 1050px;
+  }
+
   .md\:h-\[400px\] {
     height: 400px;
   }
@@ -1476,22 +1467,6 @@ video {
 
   .md\:h-\[80vh\] {
     height: 80vh;
-  }
-
-  .md\:h-\[950px\] {
-    height: 950px;
-  }
-
-  .md\:h-\[1000px\] {
-    height: 1000px;
-  }
-
-  .md\:h-\[1030px\] {
-    height: 1030px;
-  }
-
-  .md\:h-\[1050px\] {
-    height: 1050px;
   }
 
   .md\:w-24 {
@@ -1542,10 +1517,6 @@ video {
     gap: 4rem;
   }
 
-  .md\:self-center {
-    align-self: center;
-  }
-
   .md\:border-0 {
     border-width: 0px;
   }
@@ -1560,6 +1531,10 @@ video {
 
   .md\:p-5 {
     padding: 1.25rem;
+  }
+
+  .md\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .md\:text-\[68px\] {
@@ -1577,14 +1552,6 @@ video {
     height: 550px;
   }
 
-  .smLaptop\:h-\[900px\] {
-    height: 900px;
-  }
-
-  .smLaptop\:h-\[100px\] {
-    height: 100px;
-  }
-
   .smLaptop\:h-\[850px\] {
     height: 850px;
   }
@@ -1593,20 +1560,16 @@ video {
     flex-direction: row;
   }
 
-  .smLaptop\:flex-nowrap {
-    flex-wrap: nowrap;
-  }
-
   .smLaptop\:self-center {
     align-self: center;
+  }
+
+  .smLaptop\:pb-0 {
+    padding-bottom: 0px;
   }
 }
 
 @media (min-width: 1199px) {
-  .mdLaptop\:h-\[600px\] {
-    height: 600px;
-  }
-
   .mdLaptop\:h-\[700px\] {
     height: 700px;
   }
@@ -1614,16 +1577,16 @@ video {
   .mdLaptop\:flex-nowrap {
     flex-wrap: nowrap;
   }
-
-  .mdLaptop\:self-center {
-    align-self: center;
-  }
 }
 
 @media (min-width: 1280px) {
   .laptop\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .laptop\:mt-2 {
+    margin-top: 0.5rem;
   }
 
   .laptop\:block {
@@ -1644,6 +1607,10 @@ video {
 
   .laptop\:h-\[830px\] {
     height: 830px;
+  }
+
+  .laptop\:w-60 {
+    width: 15rem;
   }
 
   .laptop\:w-\[40\%\] {
@@ -1674,10 +1641,6 @@ video {
     width: 100%;
   }
 
-  .laptop\:w-\[385px\] {
-    width: 385px;
-  }
-
   .laptop\:max-w-screen-lg {
     max-width: 1300px;
   }
@@ -1692,10 +1655,6 @@ video {
 
   .laptop\:flex-col {
     flex-direction: column;
-  }
-
-  .laptop\:flex-nowrap {
-    flex-wrap: nowrap;
   }
 
   .laptop\:items-start {
@@ -1759,11 +1718,6 @@ video {
 }
 
 @media (min-width: 1300px) {
-  .lg\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .lg\:-ml-16 {
     margin-left: -4rem;
   }
@@ -1778,10 +1732,6 @@ video {
 
   .lg\:mr-5 {
     margin-right: 1.25rem;
-  }
-
-  .lg\:mt-2 {
-    margin-top: 0.5rem;
   }
 
   .lg\:h-12 {
