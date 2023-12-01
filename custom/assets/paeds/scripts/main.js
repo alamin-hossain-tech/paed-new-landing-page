@@ -5,10 +5,10 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
   grabCursor: true,
-  // autoplay: {
-  //   delay: 8000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: false,
+  },
 });
 
 var swiperTwo = new Swiper(".emergency-slide", {

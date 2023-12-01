@@ -24,29 +24,15 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&family=Roboto&family=Urbanist:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="custom/assets/paeds/css/tailwind.css?ver=25" />
-    <link rel="stylesheet" href="custom/assets/paeds/css/style.css?ver=25" />
-    <!-- Google Tag Start -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-TV6DD3");
-    </script>
-    <!-- Google Tag End -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="custom/assets/paeds/css/style.css?ver=15" />
   </head>
   <body class="relative">
     <div id="content">
       <section class="fixed w-full z-20 top-0 left-0">
-        <nav id="navbar" class="bg-light py-5">
+        <nav id="navbar" class="bg-light px-5 lg:px-0 py-5">
           <div
-            class="flex flex-wrap items-center container justify-between mx-auto"
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
           >
             <a href="" class="flex items-center gap-3 menu-link logo">
               <img
@@ -58,7 +44,7 @@
             <button
               data-collapse-toggle="navbar-default"
               type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg laptop:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="navbar-default"
               aria-expanded="false"
             >
@@ -79,12 +65,9 @@
                 />
               </svg>
             </button>
-            <div
-              class="hidden w-full laptop:block laptop:w-auto"
-              id="navbar-default"
-            >
+            <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
               <ul
-                class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg laptop:flex-row lg:gap-5 md:mt-0 md:border-0 text-[16px]"
+                class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg lg:flex-row lg:gap-5 md:mt-0 md:border-0 text-[16px]"
               >
                 <li>
                   <a
@@ -143,12 +126,14 @@
           <div class="swiper-wrapper" id="ihh-slider">
             <!-- slider  1  -->
             <div
-              class="swiper-slide h-[100vh] bg-light bg-[url('../home-slider/slider-1.png')] bg-no-repeat bg-right-bottom bg-[length:100%] xsm:bg-[length:90%] sm:bg-[length:80%] semi:bg-[length:70%] md:bg-[length:62%] laptop:bg-[length:58%] lg:bg-[length:55%]"
+              class="swiper-slide h-[90vh] md:[80vh] lg:h-[100vh] bg-light bg-[url('custom/assets/paeds/home-slider/slider-1.png')] bg-contain md:bg-[length:80%] lg:bg-[length:55%] bg-no-repeat bg-bottom md:bg-right-bottom"
             >
-              <div class="flex flex-col justify-center h-full">
-                <div class="w-full container pb-20 smLaptop:pb-0">
+              <div
+                class="max-w-screen-xl mx-8 md:mx-12 flex lg:justify-center lg:items-center h-full lg:mx-auto pt-16 lg:pt-0"
+              >
+                <div class="w-full pt-20 md:pt-40 lg:pt-0">
                   <h2
-                    class="text-[44px] md:text-[68px] leading-[1.1] text-coralDark font-caveat font-bold"
+                    class="text-5xl md:text-[68px] leading-[1.1] text-coralDark font-caveat font-bold"
                   >
                     Parkway East<br />Paediatric Urgent Care Centre
                   </h2>
@@ -157,7 +142,7 @@
                   >
                     Cut the queue with average<br />30 minutes wait time.
                   </h4>
-                  <div class="w-32 laptop:w-60 mt-0 laptop:mt-2">
+                  <div class="w-32 lg:w-60 mt-0 lg:mt-2">
                     <a
                       href="https://www.parkwayeast.com.sg/conditions-treatments/paediatric-care/parkway-east-paediatric-urgent-care-centre?utm_source=pehweb&utm_medium=button&utm_campaign=puccpage&utm_content=herobanner-wait-time"
                       target="_blank"
@@ -183,24 +168,19 @@
                     </a>
                   </div>
                 </div>
-                <!-- <div class="laptop:hidden">
-                  <img
-                    class="w-[100%] sm:w-[70%] ml-auto"
-                    src="/assets/paeds/home-slider/slider-1.png"
-                    alt=""
-                  />
-                </div> -->
               </div>
             </div>
 
             <!-- slide 2  -->
             <div
-              class="swiper-slide h-[100vh] bg-light bg-[url('../home-slider/slider-2.png')] bg-no-repeat bg-right-bottom bg-[length:100%] xsm:bg-[length:90%] sm:bg-[length:80%] semi:bg-[length:70%] md:bg-[length:62%] laptop:bg-[length:55%]"
+              class="swiper-slide h-[90vh] md:[80vh] lg:h-[100vh] bg-light bg-[url('custom/assets/paeds/home-slider/slider-2.png')] bg-contain md:bg-[length:80%] lg:bg-[length:55%] bg-no-repeat bg-bottom md:bg-right-bottom"
             >
-              <div class="flex flex-col justify-center h-full">
-                <div class="w-full container pb-20 smLaptop:pb-0">
+              <div
+                class="max-w-screen-xl mx-8 md:mx-12 lg:mx-0 flex lg:justify-center lg:items-center h-full lg:mx-auto pt-16 lg:pt-0"
+              >
+                <div class="w-full pt-20 md:pt-40 lg:pt-0">
                   <h2
-                    class="text-[44px] md:text-[68px] leading-[1.1] text-coralDark font-caveat font-bold"
+                    class="text-5xl md:text-[68px] leading-[1.1] text-coralDark font-caveat font-bold"
                   >
                     Parkway East<br />Paediatric Urgent Care Centre
                   </h2>
@@ -210,13 +190,13 @@
                     Receive care from trusted<br />
                     paediatric emergency specialists.
                   </h4>
-                  <div class="w-32 laptop:w-60 mt-0 laptop:mt-2">
+                  <div class="w-32 lg:w-60 mt-0 lg:mt-2">
                     <a
-                      href="https://www.parkwayeast.com.sg/conditions-treatments/paediatric-care/parkway-east-paediatric-urgent-care-centre?utm_source=pehweb&utm_medium=button&utm_campaign=puccpage&utm_content=herobanner-specialists"
+                      href="https://www.parkwayeast.com.sg/conditions-treatments/paediatric-care/parkway-east-paediatric-urgent-care-centre?utm_source=pehweb&utm_medium=button&utm_campaign=puccpage&utm_content=herobanner-specialists "
                       target="_blank"
                     >
                       <button
-                        class="bg-sunglow text-bodyText font-semibold font-urbanist text-md flex justify-between items-center rounded-lg py-2 lg:py-4 px-3 w-full hover:bg-sunglowHover"
+                        class="bg-sunglow hover:bg-sunglowHover text-bodyText font-semibold font-urbanist text-md flex justify-between items-center rounded-lg py-2 lg:py-4 px-3 w-full"
                       >
                         <span>Learn more</span
                         ><span>
@@ -236,24 +216,19 @@
                     </a>
                   </div>
                 </div>
-                <!-- <div class="laptop:hidden">
-                <img
-                  class="w-[100%] sm:w-[70%] ml-auto"
-                  src="/assets/paeds/home-slider/slider-1.png"
-                  alt=""
-                />
-              </div> -->
               </div>
             </div>
 
             <!-- slide 3  -->
             <div
-              class="swiper-slide h-[100vh] bg-light bg-[url('../home-slider/slider-3.png')] bg-no-repeat bg-right-bottom bg-[length:100%] xsm:bg-[length:90%] sm:bg-[length:80%] semi:bg-[length:70%] md:bg-[length:62%] laptop:bg-[length:50%]"
+              class="swiper-slide h-[90vh] lg:h-[100vh] bg-light bg-[url('custom/assets/paeds/home-slider/slider-3.png')] bg-contain md:bg-[length:80%] lg:bg-[length:55%] bg-no-repeat bg-bottom md:bg-right-bottom"
             >
-              <div class="flex flex-col justify-center h-full">
-                <div class="w-full container pb-20 smLaptop:pb-0">
+              <div
+                class="max-w-screen-xl mx-8 md:mx-12 lg:mx-0 flex lg:justify-center lg:items-center h-full lg:mx-auto pt-16 lg:pt-0"
+              >
+                <div class="w-full pt-20 md:pt-40 lg:pt-0">
                   <h2
-                    class="text-[44px] md:text-[68px] leading-[1.1] text-coralDark font-caveat font-bold"
+                    class="text-5xl md:text-[68px] leading-[1.1] text-coralDark font-caveat font-bold"
                   >
                     Parkway East<br />Paediatric Urgent Care Centre
                   </h2>
@@ -262,13 +237,13 @@
                   >
                     Open for after-hours care<br />to fit your schedule.
                   </h4>
-                  <div class="w-32 laptop:w-60 mt-0 laptop:mt-2">
+                  <div class="w-32 lg:w-60 mt-0 lg:mt-2">
                     <a
-                      href="https://www.parkwayeast.com.sg/conditions-treatments/paediatric-care/parkway-east-paediatric-urgent-care-centre?utm_source=pehweb&utm_medium=button&utm_campaign=puccpage&utm_content=herobanner-after-hours"
+                      href="https://www.parkwayeast.com.sg/conditions-treatments/paediatric-care/parkway-east-paediatric-urgent-care-centre?utm_source=pehweb&utm_medium=button&utm_campaign=puccpage&utm_content=herobanner-after-hours "
                       target="_blank"
                     >
                       <button
-                        class="bg-sunglow text-bodyText font-semibold font-urbanist text-md flex justify-between items-center rounded-lg py-2 lg:py-4 px-3 w-full hover:bg-sunglowHover"
+                        class="bg-sunglow hover:bg-sunglowHover text-bodyText font-semibold font-urbanist text-md flex justify-between items-center rounded-lg py-2 lg:py-4 px-3 w-full"
                       >
                         <span>Learn more</span
                         ><span>
@@ -298,21 +273,17 @@
 
       <!-- About Us Section  -->
       <section class="bg-sunglow" id="about-us">
-        <div class="container text-center py-20">
-          <h2
-            class="font-caveat text-4xl laptop:text-6xl text-white text-center"
-          >
+        <div class="max-w-screen-xl mx-8 text-center lg:mx-auto py-20">
+          <h2 class="font-caveat text-4xl lg:text-6xl text-white text-center">
             Parkway East Paediatric Urgent Care Centre
           </h2>
           <div class="max-w-screen-md md:mx-auto">
-            <p
-              class="text-lg laptop:text-[20px] font-semibold text-bodyText py-6"
-            >
+            <p class="text-lg lg:text-[20px] font-semibold text-bodyText py-6">
               is Singapore’s sole private urgent care centre dedicated to
               addressing the urgent medical needs of children and adolescents up
               to age 14.
             </p>
-            <p class="text-lg laptop:text-[20px] font-semibold text-bodyText">
+            <p class="text-lg lg:text-[20px] font-semibold text-bodyText">
               We specialise in diagnosing, stabilising, and treating urgent
               paediatric illnesses. Our expertise covers a wide range of
               medical, surgical, and trauma conditions.
@@ -322,7 +293,7 @@
 
           <div class="pt-8">
             <div
-              class="flex flex-col md:flex-row justify-center items-center gap-8 laptop:gap-12"
+              class="flex flex-col md:flex-row justify-center items-center gap-8 lg:gap-12"
             >
               <div
                 class="rounded-full bg-[#fcf6e3] h-56 w-56 flex justify-center items-center"
@@ -395,16 +366,14 @@
 
       <!-- Emergency Section Start  -->
       <section class="bg-aqua py-16 pb-24" id="emergency">
-        <div class="container">
-          <div class="laptop:mx-auto">
-            <h2
-              class="font-caveat text-4xl laptop:text-6xl text-white text-center"
-            >
+        <div class="max-w-screen-xl lg:mx-auto">
+          <div class="mx-8 lg:mx-auto">
+            <h2 class="font-caveat text-4xl lg:text-6xl text-white text-center">
               When is it an emergency?
             </h2>
             <div class="text-center max-w-screen-md mx-auto">
               <p
-                class="text-lg text-bodyText laptop:text-[20px] font-semibold py-6"
+                class="text-lg text-bodyText lg:text-[20px] font-semibold py-6"
               >
                 Here are some symptoms to consider when deciding whether to take
                 your child to the children’s emergency or children’s clinic.
@@ -413,7 +382,7 @@
           </div>
           <!-- cards start -->
           <div
-            class="flex-col md:flex-wrap mdLaptop:flex-nowrap md:flex-row pt-12 justify-center items-center gap-8 hidden md:flex"
+            class="flex-col flex-wrap md:flex-row pt-12 justify-center items-center gap-8 hidden md:flex"
           >
             <!-- card 1 -->
             <div class="w-full md:w-[40%] lg:w-[385px]">
@@ -437,7 +406,7 @@
               </div>
               <!-- bottom portion -->
               <div
-                class="bg-white px-12 rounded-br-[50px] h-auto md:h-[1050px] smLaptop:h-[850px] laptop:h-[830px] lg:h-[800px] py-8"
+                class="bg-white px-12 rounded-br-[50px] h-auto md:h-[950px] lg:h-[800px] py-8"
               >
                 <div class="flex flex-col gap-6">
                   <!-- 1  -->
@@ -576,10 +545,10 @@
               <div
                 class="bg-saffronDark text-white text-center py-12 rounded-tl-[50px] h-[255px] flex flex-col items-center"
               >
-                <h4 class="text-2xl laptop:text-[34px] font-bold">
+                <h4 class="text-2xl lg:text-[34px] font-bold">
                   Children’s<br />Urgent Care
                 </h4>
-                <p class="text-lg lg:text-xl leading-tight font-semibold pt-4">
+                <p class="text-lg lg:text-xl leading-tight font-semibold pt-3">
                   at
                   <a
                     href="https://www.parkwaymedicentre.com.sg/?utm_source=pehweb&utm_medium=button&utm_campaign=puccpage&utm_content=when-emergency"
@@ -592,7 +561,7 @@
               </div>
               <!-- bottom portion -->
               <div
-                class="bg-white px-12 rounded-br-[50px] h-auto md:h-[1050px] smLaptop:h-[850px] laptop:h-[830px] lg:h-[800px] py-8"
+                class="bg-white px-12 rounded-br-[50px] h-auto md:h-[950px] lg:h-[800px] py-8"
               >
                 <div class="flex flex-col gap-6">
                   <!-- 1  -->
@@ -671,12 +640,10 @@
               <div
                 class="bg-[#c89e41] text-white text-center py-12 rounded-tl-[50px] h-[255px] flex flex-col items-center"
               >
-                <h4 class="text-2xl laptop:text-[34px] font-bold">
+                <h4 class="text-2xl lg:text-[34px] font-bold">
                   Children’s<br />Care
                 </h4>
-                <p
-                  class="text-lg laptop:text-xl leading-tight font-semibold pt-3"
-                >
+                <p class="text-lg lg:text-xl leading-tight font-semibold pt-3">
                   at<a
                     href="https://www.parkwayeast.com.sg/parkway-east-paediatric-clinic/overview?utm_source=pehweb&utm_medium=button&utm_campaign=puccpage&utm_content=when-emergency"
                     target="_blank"
@@ -700,7 +667,7 @@
               </div>
               <!-- bottom portion -->
               <div
-                class="bg-white px-12 rounded-br-[50px] h-auto md:h-[1050px] smLaptop:h-[850px] laptop:h-[830px] lg:h-[800px] py-8"
+                class="bg-white px-12 rounded-br-[50px] h-auto lg:h-[800px] py-8"
               >
                 <div class="flex flex-col gap-6">
                   <!-- 1  -->
@@ -787,22 +754,20 @@
           <!-- cards end -->
 
           <!-- mobile card slider  -->
-          <div
-            class="swiper emergency-slide overflow-visible block md:hidden pt-8"
-          >
+          <div class="swiper emergency-slide px-10 block md:hidden pt-8">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <!-- card 1 -->
-                <div class="w-full">
+                <div class="w-full swiper-slide">
                   <!-- top portion  -->
                   <div
                     class="bg-coralDark text-white text-center py-12 rounded-tl-[50px] h-[255px] flex flex-col items-center"
                   >
-                    <h4 class="text-2xl laptop:text-[34px] font-bold">
+                    <h4 class="text-2xl lg:text-[34px] font-bold">
                       Children’s<br />Emergency
                     </h4>
                     <p
-                      class="text-lg laptop:text-xl leading-tight font-semibold pt-3"
+                      class="text-lg lg:text-xl leading-tight font-semibold pt-3"
                     >
                       at
                       <a
@@ -955,16 +920,16 @@
               </div>
               <div class="swiper-slide">
                 <!-- card 2  -->
-                <div class="w-full">
+                <div class="w-full swiper-slide">
                   <!-- top portion  -->
                   <div
                     class="bg-saffronDark text-white text-center py-12 rounded-tl-[50px] h-[255px] flex flex-col items-center"
                   >
-                    <h4 class="text-2xl laptop:text-[34px] font-bold">
+                    <h4 class="text-2xl lg:text-[34px] font-bold">
                       Children’s Urgent Care
                     </h4>
                     <p
-                      class="text-lg laptop:text-xl leading-tight font-semibold pt-3"
+                      class="text-lg lg:text-xl leading-tight font-semibold pt-3"
                     >
                       at
                       <a
@@ -1051,7 +1016,7 @@
               </div>
               <div class="swiper-slide">
                 <!-- card 3 -->
-                <div class="w-full">
+                <div class="w-full swiper-slide">
                   <!-- top portion  -->
                   <div
                     class="bg-[#c89e41] text-white text-center py-12 rounded-tl-[50px] h-[255px] flex flex-col items-center"
@@ -1177,12 +1142,12 @@
 
       <!-- End to End Service Start -->
       <section id="services">
-        <div class="container pt-16">
+        <div class="max-w-screen-xl mx-4 pt-16 lg:mx-auto">
           <div class="text-center max-w-screen-lg mx-auto">
-            <h2 class="font-caveat text-4xl laptop:text-6xl text-coralDark">
+            <h2 class="font-caveat text-4xl lg:text-6xl text-coralDark">
               We provide end-to-end paediatric services
             </h2>
-            <p class="text-lg text-bodyText laptop::text-xl font-semibold py-6">
+            <p class="text-lg text-bodyText lg:text-xl font-semibold py-6">
               Whether your child requires long-term care, or immediate health
               support, we are here<br />
               every step of the way.
@@ -1190,10 +1155,7 @@
           </div>
           <div class="pt-3 pt-16">
             <!-- this portion only will show in mobile device  -->
-            <div
-              id="end-to"
-              class="relative h-[280px] xsm:h-[300px] sm:h-[430px] semi:h-[680px] md:h-[400px] smLaptop:h-[550px] mdLaptop:h-[700px] laptop:hidden overflow-hidden"
-            >
+            <div id="end-to" class="relative md:h-[650px] overflow-hidden">
               <img
                 src="custom/assets/paeds/service/service-round.png"
                 alt=""
@@ -1208,36 +1170,36 @@
             <!-- end mobile portion  -->
 
             <div
-              class="relative laptop:h-[550px] lg:h-[680px] overflow-hidden py-12 laptop:py-0"
+              class="relative mx-8 lg:mx-0 lg:h-[680px] overflow-hidden py-12 lg:py-0"
             >
               <div class="flex flex-col gap-8 h-full justify-between w-full">
                 <!-- top  flex service 1 & 2 -->
                 <div
-                  class="flex flex-col gap-8 md:gap-16 lg:gap-0 md:flex-row laptop:max-w-screen-md mx-auto z-10 md:justify-center laptop:justify-between w-full laptop:h-[50%]"
+                  class="flex flex-col gap-8 md:gap-16 lg:gap-0 md:flex-row lg:max-w-screen-md mx-auto z-10 md:justify-center lg:justify-between w-full lg:h-[50%]"
                 >
                   <!-- service 1 -->
                   <div
-                    class="text-coralDark flex gap-3 laptop:flex-col items-center laptop:items-start justify-between laptop:justify-center z-10 text-left laptop:text-right lg:-ml-16"
+                    class="text-coralDark flex gap-3 lg:flex-col items-center lg:items-start justify-between lg:justify-center z-10 text-left lg:text-right lg:-ml-16"
                   >
                     <div
-                      class="flex laptop:flex-col w-full gap-3 items-center laptop:items-start"
+                      class="flex lg:flex-col w-full gap-3 items-center lg:items-start"
                     >
                       <img
                         data-modal-target="service-one"
                         data-modal-toggle="service-one"
                         src="custom/assets/paeds/service/parkway-east-1.png"
                         alt="parkway-east"
-                        class="w-[30%] laptop:w-[45%] lg:w-[60%] ml-auto cursor-pointer hover:opacity-50"
+                        class="w-[30%] lg:w-[60%] ml-auto cursor-pointer hover:opacity-50"
                       />
                       <h4
                         data-modal-target="service-one"
                         data-modal-toggle="service-one"
-                        class="text-lg laptop:text-xl w-full font-bold leading-tight cursor-pointer hover:text-coralLight"
+                        class="text-lg lg:text-xl w-full font-bold leading-tight cursor-pointer hover:text-coralLight"
                       >
                         Parkway East<br />Paediatric Urgent Care
                       </h4>
                     </div>
-                    <div class="laptop:w-full">
+                    <div class="lg:w-full">
                       <button
                         data-modal-target="service-one"
                         data-modal-toggle="service-one"
@@ -1269,20 +1231,20 @@
 
                   <!-- service 2  -->
                   <div
-                    class="text-coralDark flex gap-3 laptop:flex-col items-center laptop:items-start justify-between laptop:justify-center z-10 text-left lg:-mr-16"
+                    class="text-coralDark flex gap-3 lg:flex-col items-center lg:items-start justify-between lg:justify-center z-10 text-left lg:-mr-16"
                   >
                     <div
-                      class="flex laptop:flex-col w-full gap-3 items-center laptop:items-start"
+                      class="flex lg:flex-col w-full gap-3 lg:spce-x-0 items-center lg:items-start"
                     >
                       <img
                         src="custom/assets/paeds/service/parkway-east-2.png"
                         alt="parkway-east"
-                        class="w-[30%] laptop:w-[45%] lg:w-[60%] cursor-pointer hover:opacity-50"
+                        class="w-[30%] lg:w-[60%] cursor-pointer hover:opacity-50"
                         data-modal-target="service-two"
                         data-modal-toggle="service-two"
                       />
                       <h4
-                        class="text-lg laptop:text-xl font-bold w-full laptop:w-auto leading-tight hover:text-coralLight cursor-pointer"
+                        class="text-lg lg:text-xl font-bold w-full lg:w-auto leading-tight hover:text-coralLight cursor-pointer"
                         data-modal-target="service-two"
                         data-modal-toggle="service-two"
                       >
@@ -1321,31 +1283,31 @@
                 </div>
                 <!-- bottom flex service 3 & 4 -->
                 <div
-                  class="flex flex-col gap-8 md:gap-16 laptop:gap-0 md:flex-row laptop:max-w-screen-lg z-10 md:justify-center laptop:justify-between w-full laptop:h-[50%]"
+                  class="flex flex-col gap-8 md:gap-16 lg:gap-0 md:flex-row lg:max-w-screen-lg z-10 md:justify-center lg:justify-between w-full lg:h-[50%]"
                 >
                   <!-- service 3 -->
                   <div
-                    class="text-coralDark flex gap-3 laptop:flex-col items-center laptop:items-start justify-between laptop:justify-center z-10 text-left laptop:text-right lg:ml-5"
+                    class="text-coralDark flex gap-3 lg:flex-col items-center lg:items-start justify-between lg:justify-center z-10 text-left lg:text-right lg:ml-5"
                   >
                     <div
-                      class="flex laptop:flex-col w-full gap-3 items-center laptop:items-start"
+                      class="flex lg:flex-col w-full gap-3 items-center lg:items-start"
                     >
                       <img
                         src="custom/assets/paeds/service/parkway-east-3.png"
                         alt="parkway-east"
-                        class="w-[30%] laptop:w-[45%] lg:w-[60%] ml-auto cursor-pointer hover:opacity-50"
+                        class="w-[30%] lg:w-[60%] ml-auto cursor-pointer hover:opacity-50"
                         data-modal-target="service-three"
                         data-modal-toggle="service-three"
                       />
                       <h4
-                        class="text-lg laptop:text-xl w-full font-bold leading-tight hover:text-coralLight cursor-pointer"
+                        class="text-lg lg:text-xl w-full font-bold leading-tight hover:text-coralLight cursor-pointer"
                         data-modal-target="service-three"
                         data-modal-toggle="service-three"
                       >
                         Parkway MediCentre<br />at Woodleigh Mall
                       </h4>
                     </div>
-                    <div class="laptop:w-full">
+                    <div class="lg:w-full">
                       <button
                         data-modal-target="service-three"
                         data-modal-toggle="service-three"
@@ -1376,20 +1338,20 @@
                   </div>
                   <!-- service 4  -->
                   <div
-                    class="text-coralDark flex gap-3 laptop:flex-col items-center laptop:items-start justify-between laptop:justify-center z-10 text-left lg:mr-5"
+                    class="text-coralDark flex gap-3 lg:flex-col items-center lg:items-start justify-between lg:justify-center z-10 text-left lg:mr-5"
                   >
                     <div
-                      class="flex laptop:flex-col w-full gap-3 items-center laptop:items-start"
+                      class="flex lg:flex-col w-full gap-3 lg:spce-x-0 items-center lg:items-start"
                     >
                       <img
                         src="custom/assets/paeds/service/parkway-east-4.png"
                         alt="parkway-east"
-                        class="w-[30%] laptop:w-[45%] lg:w-[60%] cursor-pointer hover:opacity-50"
+                        class="w-[30%] lg:w-[60%] cursor-pointer hover:opacity-50"
                         data-modal-target="service-four"
                         data-modal-toggle="service-four"
                       />
                       <h4
-                        class="text-lg laptop:text-xl font-bold w-full laptop:w-auto leading-tight hover:text-coralLight cursor-pointer"
+                        class="text-lg lg:text-xl font-bold w-full lg:w-auto leading-tight hover:text-coralLight cursor-pointer"
                         data-modal-target="service-four"
                         data-modal-toggle="service-four"
                       >
@@ -1429,12 +1391,12 @@
                 <img
                   src="custom/assets/paeds/service/service-round.png"
                   alt=""
-                  class="absolute hidden laptop:block -bottom-48 left-1/2 -translate-x-1/2 w-[65%]"
+                  class="absolute hidden lg:block -bottom-48 left-1/2 -translate-x-1/2 w-[65%]"
                 />
                 <img
                   src="custom/assets/paeds/service/parkway-east-circle-middle.png"
                   alt=""
-                  class="hidden laptop:block absolute bottom-0 left-1/2 -translate-x-1/2 w-[42%]"
+                  class="hidden lg:block absolute bottom-0 left-1/2 -translate-x-1/2 w-[42%]"
                 />
               </div>
             </div>
@@ -1445,25 +1407,23 @@
 
       <!-- why choose us section start  -->
       <section class="bg-light" id="why-choose">
-        <div class="container py-20">
-          <div class="flex flex-col laptop:flex-row gap-6">
+        <div class="max-w-screen-lg py-20 mx-8 lg:mx-auto">
+          <div class="flex flex-col lg:flex-row gap-6">
             <!-- left side title and image  -->
-            <div class="laptop:w-[40%] lg:w-[38%]">
+            <div class="lg:w-[38%]">
               <h2
-                class="font-caveat text-4xl laptop:text-6xl text-aquaDark pb-8 text-center lg:text-left"
+                class="font-caveat text-4xl lg:text-6xl text-aquaDark pb-8 text-center lg:text-left"
               >
                 Why Choose Us
               </h2>
               <img
                 src="custom/assets/paeds/why-choose-us/why-choose-us-left-banner.png"
                 alt="why-choose-us-left-side-banner"
-                class="w-[90%] semi:w-[60%] md:w-[50%] laptop:w-[80%] lg:w-[90%] mx-auto"
+                class="w-[90%] md:w-[50%] lg:w-full mx-auto"
               />
             </div>
             <!-- right side features  -->
-            <div
-              class="flex flex-col gap-5 laptop:w-[60%] lg:w-[62%] justify-center"
-            >
+            <div class="flex flex-col gap-5 lg:w-[62%] justify-center">
               <!-- features  -->
 
               <!-- 1 -->
@@ -1548,9 +1508,9 @@
 
       <!-- Articles Section Start  -->
       <section class="bg-sunglow" id="articles">
-        <div class="py-20 container">
+        <div class="max-w-screen-lg py-20 mx-8 lg:mx-auto">
           <h2
-            class="font-caveat text-4xl laptop:text-6xl text-bodyText pb-8 text-center"
+            class="font-caveat text-4xl lg:text-6xl text-bodyText pb-8 text-center"
           >
             Related Articles
           </h2>
@@ -1767,12 +1727,12 @@
 
       <!-- Contact and Footer Section  -->
       <footer class="bg-light" id="contact">
-        <div class="pt-16 pb-8 container">
+        <div class="max-w-screen-xl pt-16 pb-8 mx-8 lg:mx-auto">
           <div
-            class="flex flex-col smLaptop:flex-row gap-10 lg:gap-0 justify-between"
+            class="flex flex-col md:flex-row gap-10 lg:gap-0 justify-between"
           >
             <!-- logo  -->
-            <div class="flex-1 smLaptop:self-center">
+            <div class="flex-1 md:self-center">
               <a href="#hero">
                 <img
                   src="custom/assets/paeds/logo/main-logo-scaled.png"
@@ -1891,12 +1851,12 @@
             <div class="border-b-[0.1px] border-[#3c3c3c] w-full"></div>
           </div>
           <!-- divider start  -->
-          <!-- copyright texts  -->
-          <p class="text-center text-bodyText text-sm hidden laptop:block">
+          <!-- copyright  -->
+          <p class="text-center text-bodyText text-sm hidden lg:block">
             Copyright © 2023 Parkway Holdings Limited. All rights reserved.
             Company Registration no. 197400320R
           </p>
-          <p class="text-center text-bodyText text-sm block laptop:hidden">
+          <p class="text-center text-bodyText text-sm block lg:hidden">
             Copyright © 2023 Parkway Holdings Limited.<br />
             All rights reserved. Company <br />Registration no. 197400320R
           </p>
@@ -2061,7 +2021,7 @@
                   rehabilitation.
                 </p>
 
-                <div class="md:w-60 mt-12 mx-auto">
+                <div class="lg:w-60 mt-12 mx-auto">
                   <a
                     href="https://www.parkwayeast.com.sg/parkway-east-paediatric-clinic/overview?utm_source=pehweb&utm_medium=button&utm_campaign=puccpage&utm_content=endtoend-pepc "
                     target="_blank"
@@ -2143,7 +2103,7 @@
                   >.
                 </p>
 
-                <div class="md:w-60 mt-12 mx-auto">
+                <div class="lg:w-60 mt-12 mx-auto">
                   <a
                     href="https://www.parkwaymedicentre.com.sg/?utm_source=pehweb&utm_medium=button&utm_campaign=puccpage&utm_content=endtoend-pmc"
                     target="_blank"
@@ -2220,7 +2180,7 @@
                   their development, from infancy through adolescence.
                 </p>
 
-                <div class="md:w-60 mt-12 mx-auto">
+                <div class="lg:w-60 mt-12 mx-auto">
                   <a
                     href="https://www.parkwayshenton.com.sg/find-a-clinic?utm_source=pehweb&utm_medium=button&utm_campaign=puccpage&utm_content=endtoend-shenton-locator"
                     target="_blank"
@@ -2253,9 +2213,10 @@
       <!-- all modals  -->
     </div>
 
+    <script src="custom/assets/paeds/scripts/tailwind.config.js?ver=15"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?ver=25"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?ver=12"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="custom/assets/paeds/scripts/main.js?ver=25"></script>
+    <script src="custom/assets/paeds/scripts/main.js?ver=15"></script>
   </body>
 </html>
