@@ -140,3 +140,10 @@ $(function () {
     }
   });
 });
+
+// auto year update
+const yearPlaceholderNode = document.querySelectorAll(".c-year");
+const date = new Date();
+yearPlaceholderNode.forEach(
+  (placeholder) => (placeholder.innerHTML = date.getFullYear())
+);
