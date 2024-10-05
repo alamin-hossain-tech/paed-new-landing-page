@@ -32,10 +32,13 @@ module.exports = {
         bodyText: "var(--color-body-text)",
         black: "var(--color-black)",
         light: "var(--color-light)",
+        textDark: "#3c3c3c",
+        skyBtn: "#75b0e0",
       },
       fontFamily: {
         caveat: ["Caveat", "cursive"],
         urbanist: ["Urbanist", "sans-serif"],
+        peachy: ["Peachy", "sans-serif"],
       },
     },
   },

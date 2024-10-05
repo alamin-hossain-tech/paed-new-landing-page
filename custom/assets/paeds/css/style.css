@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Peachy";
+  src: url("/custom/assets/paeds/fonts/peachy-keen-jf.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --color-aqua: #80bddd;
   --color-aqua-dark: #42a6dc;
