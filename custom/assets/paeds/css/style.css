@@ -121,13 +121,15 @@ body {
   padding-top: 50px;
 }
 
-.swiper-pagination {
-  top: -5px !important;
+.boySwiper .swiper-pagination {
+  bottom: 94%;
+  z-index: 10;
 }
+
 /* nav menu active styles  */
 .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background-color: transparent; /* Default to transparent for outline effect */
   border: 1px solid var(--color-coral-dark); /* Outline for inactive bullets */
   opacity: 1; /* Ensure bullets are fully visible */
@@ -140,3 +142,12 @@ body {
     --color-coral-dark
   ); /* Keeps the border same as the background color */
 }
+
+/* .swiper.boySwiper {
+  touch-action: auto;
+  user-select: none;
+} */
+
+/* .swiper-slide {
+  touch-action: pan-y;
+} */

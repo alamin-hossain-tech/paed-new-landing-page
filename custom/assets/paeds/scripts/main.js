@@ -10,15 +10,19 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper = new Swiper(".boySwiper", {
   loop: true,
-  // grabCursor: true,
   autoplay: {
     delay: 8000,
     disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
-    clickable: true, // Enables clicking on the pagination bullets
+    clickable: true,
   },
+  touchEventsTarget: "wrapper", // Ensure touch events work on the wrapper
+  simulateTouch: true, // Ensures swiping with touch is enabled
+  allowTouchMove: true, // Enables swiping via touch
+  grabCursor: true, // Optional: to display grab cursor
+  spaceBetween: 10,
 });
 
 // document.addEventListener("DOMContentLoaded", function () {
