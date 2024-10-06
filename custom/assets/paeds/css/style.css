@@ -107,66 +107,36 @@ body {
 }
 
 /* hero slider styles  */
-.swiper {
+.mySwipper .swiper,
+.boySwiper .swiper {
   width: 100%;
   height: 100%;
 }
 
-.swiper {
+.mySwiper .swiper {
   margin-left: auto;
   margin-right: auto;
 }
-
-.mySwiper .swiper-horizontal > .swiper-pagination-bullets {
-  bottom: 30px;
+.swiper.boySwiper {
+  padding-top: 50px;
 }
 
-.mySwiper .swiper-pagination-bullet-active {
-  background: var(--color-aqua-dark);
+.swiper-pagination {
+  top: -5px !important;
 }
-.mySwiper .swiper-pagination-bullet {
-  background: var(--color-aqua-dark);
-  height: 15px;
-  width: 15px;
-}
-
 /* nav menu active styles  */
-.active {
-  background: var(--color-aqua-dark);
-  color: white !important;
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: transparent; /* Default to transparent for outline effect */
+  border: 1px solid var(--color-coral-dark); /* Outline for inactive bullets */
+  opacity: 1; /* Ensure bullets are fully visible */
 }
 
-.sticky-nav {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
-  transition: padding 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  width: 35px; /* Adjust the width as needed */
-  height: 35px; /* Adjust the height as needed */
-  background-color: var(--color-aqua-dark);
-  border-radius: 50%; /* Make it fully rounded */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-size: 20px;
-  color: var(--color-light);
-}
-
-.swiper-button-next.swiper-button-disabled,
-.swiper-button-prev.swiper-button-disabled {
-  display: none;
-}
-
-.swiper-button-next {
-  right: -20px;
-}
-
-.swiper-button-prev {
-  left: -20px;
+/* Active bullet styling: solid red */
+.swiper-pagination-bullet-active {
+  background-color: var(--color-coral-dark); /* Solid color for active bullet */
+  border-color: var(
+    --color-coral-dark
+  ); /* Keeps the border same as the background color */
 }

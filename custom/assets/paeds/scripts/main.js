@@ -8,6 +8,19 @@ var swiper = new Swiper(".mySwiper", {
   autoHeight: true,
 });
 
+var swiper = new Swiper(".boySwiper", {
+  loop: true,
+  // grabCursor: true,
+  autoplay: {
+    delay: 8000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true, // Enables clicking on the pagination bullets
+  },
+});
+
 // document.addEventListener("DOMContentLoaded", function () {
 //   const navLinks = document.querySelectorAll(".menu-link");
 //   const navMenu = document.getElementById("navbar");
