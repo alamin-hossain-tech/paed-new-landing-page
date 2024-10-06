@@ -989,6 +989,14 @@ video {
   height: 0.25rem;
 }
 
+.h-\[90vh\] {
+  height: 90vh;
+}
+
+.h-\[95vh\] {
+  height: 95vh;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -1117,6 +1125,18 @@ video {
   width: 0.25rem;
 }
 
+.w-\[110px\] {
+  width: 110px;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1181,6 +1201,10 @@ video {
 
 .flex-col-reverse {
   flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -1370,6 +1394,14 @@ video {
   background-image: url('/custom/assets/paeds/images/hero-section/hero-bg-mobile.jpg');
 }
 
+.bg-\[url\(\'\/custom\/assets\/paeds\/images\/hero-section\/hero-bg-mobile-scaled\.jpg\'\)\] {
+  background-image: url('/custom/assets/paeds/images/hero-section/hero-bg-mobile-scaled.jpg');
+}
+
+.bg-\[url\(\'\/custom\/assets\/paeds\/images\/hero-section\/hero-bg-mobile-1\.jpg\'\)\] {
+  background-image: url('/custom/assets/paeds/images/hero-section/hero-bg-mobile-1.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1542,6 +1574,10 @@ video {
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .text-center {
@@ -1900,9 +1936,53 @@ video {
   opacity: 1;
 }
 
+@media (min-width: 584px) {
+  .sm\:h-\[90vh\] {
+    height: 90vh;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:bg-\[url\(\'\/custom\/assets\/paeds\/images\/hero-section\/hero-bg\.jpg\'\)\] {
+    background-image: url('/custom/assets/paeds/images/hero-section/hero-bg.jpg');
+  }
+
+  .sm\:bg-contain {
+    background-size: contain;
+  }
+
+  .sm\:bg-\[length\:90\%\] {
+    background-size: 90%;
+  }
+
+  .sm\:bg-\[length\:60\%\] {
+    background-size: 60%;
+  }
+
+  .sm\:bg-\[length\:100\%\] {
+    background-size: 100%;
+  }
+
+  .sm\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .sm\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
 @media (min-width: 700px) {
   .semi\:w-\[60\%\] {
     width: 60%;
+  }
+
+  .semi\:flex-row {
+    flex-direction: row;
   }
 }
 
@@ -1922,6 +2002,10 @@ video {
 
   .md\:h-\[450px\] {
     height: 450px;
+  }
+
+  .md\:h-\[85vh\] {
+    height: 85vh;
   }
 
   .md\:w-24 {
@@ -1948,6 +2032,10 @@ video {
     flex-direction: row;
   }
 
+  .md\:bg-\[url\(\'\/custom\/assets\/paeds\/images\/hero-section\/hero-bg\.jpg\'\)\] {
+    background-image: url('/custom/assets/paeds/images/hero-section/hero-bg.jpg');
+  }
+
   .md\:bg-cover {
     background-size: cover;
   }
@@ -1963,12 +2051,28 @@ video {
 }
 
 @media (min-width: 991px) {
+  .smLaptop\:w-1\/2 {
+    width: 50%;
+  }
+
+  .smLaptop\:w-\[110px\] {
+    width: 110px;
+  }
+
+  .smLaptop\:w-5\/6 {
+    width: 83.333333%;
+  }
+
   .smLaptop\:flex-row {
     flex-direction: row;
   }
 
   .smLaptop\:self-center {
     align-self: center;
+  }
+
+  .smLaptop\:bg-\[url\(\'\/custom\/assets\/paeds\/images\/hero-section\/hero-bg\.jpg\'\)\] {
+    background-image: url('/custom/assets/paeds/images/hero-section/hero-bg.jpg');
   }
 }
 
