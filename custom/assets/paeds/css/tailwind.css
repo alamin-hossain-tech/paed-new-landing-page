@@ -793,10 +793,6 @@ video {
   width: 0.75rem;
 }
 
-.w-3\/4 {
-  width: 75%;
-}
-
 .w-32 {
   width: 8rem;
 }
@@ -859,18 +855,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[20\%\] {
-  width: 20%;
-}
-
-.w-\[22\%\] {
-  width: 22%;
-}
-
-.w-\[21\%\] {
-  width: 21%;
 }
 
 .max-w-screen-md {
@@ -952,16 +936,16 @@ video {
   gap: 0.5rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .rounded-full {
@@ -981,6 +965,10 @@ video {
   border-bottom-left-radius: 10px;
 }
 
+.rounded-bl-\[25\%\] {
+  border-bottom-left-radius: 25%;
+}
+
 .rounded-br-\[50px\] {
   border-bottom-right-radius: 50px;
 }
@@ -989,52 +977,8 @@ video {
   border-top-left-radius: 50px;
 }
 
-.rounded-tr-full {
-  border-top-right-radius: 9999px;
-}
-
-.rounded-tr-xl {
-  border-top-right-radius: 0.75rem;
-}
-
-.rounded-tr-lg {
-  border-top-right-radius: 0.5rem;
-}
-
-.rounded-tr-3xl {
-  border-top-right-radius: 1.5rem;
-}
-
-.rounded-tr-\[50\%\] {
-  border-top-right-radius: 50%;
-}
-
-.rounded-bl-\[50\%\] {
-  border-bottom-left-radius: 50%;
-}
-
-.rounded-bl-\[25\%\] {
-  border-bottom-left-radius: 25%;
-}
-
 .rounded-tr-\[25\%\] {
   border-top-right-radius: 25%;
-}
-
-.rounded-bl-\[30\%\] {
-  border-bottom-left-radius: 30%;
-}
-
-.rounded-tr-\[30\%\] {
-  border-top-right-radius: 30%;
-}
-
-.rounded-bl-\[20\%\] {
-  border-bottom-left-radius: 20%;
-}
-
-.rounded-tr-\[20\%\] {
-  border-top-right-radius: 20%;
 }
 
 .border-b-\[0\.1px\] {
@@ -1095,10 +1039,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\/custom\/\'\)\] {
-  background-image: url('/custom/');
 }
 
 .bg-\[url\(\'\/custom\/assets\/paeds\/images\/hero-section\/hero-bg-mobile-1\.jpg\'\)\] {
@@ -1190,11 +1130,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1241,10 +1176,6 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
 }
 
 .pt-7 {
@@ -1474,10 +1405,6 @@ video {
     height: 85vh;
   }
 
-  .md\:h-screen {
-    height: 100vh;
-  }
-
   .md\:w-24 {
     width: 6rem;
   }
@@ -1498,19 +1425,14 @@ video {
     flex-direction: row;
   }
 
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1539,28 +1461,12 @@ video {
     width: 50%;
   }
 
-  .smLaptop\:w-5\/6 {
-    width: 83.333333%;
-  }
-
-  .smLaptop\:w-\[110px\] {
-    width: 110px;
-  }
-
-  .smLaptop\:w-\[90px\] {
-    width: 90px;
-  }
-
-  .smLaptop\:w-\[60px\] {
-    width: 60px;
+  .smLaptop\:w-\[21\%\] {
+    width: 21%;
   }
 
   .smLaptop\:w-\[70px\] {
     width: 70px;
-  }
-
-  .smLaptop\:w-\[21\%\] {
-    width: 21%;
   }
 
   .smLaptop\:flex-1 {
@@ -1569,10 +1475,6 @@ video {
 
   .smLaptop\:flex-row {
     flex-direction: row;
-  }
-
-  .smLaptop\:gap-5 {
-    gap: 1.25rem;
   }
 
   .smLaptop\:gap-3 {
@@ -1587,18 +1489,14 @@ video {
     background-image: url('/custom/assets/paeds/images/hero-section/hero-bg.jpg');
   }
 
-  .smLaptop\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
   .smLaptop\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
   }
 
-  .smLaptop\:pt-0 {
-    padding-top: 0px;
+  .smLaptop\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .smLaptop\:pl-11 {
@@ -1610,31 +1508,18 @@ video {
     line-height: 2.5rem;
   }
 
-  .smLaptop\:text-xl {
-    font-size: 1.25rem;
+  .smLaptop\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
-  .smLaptop\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .smLaptop\:text-lg {
-    font-size: 1.125rem;
+  .smLaptop\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width: 1199px) {
-  .mdLaptop\:w-1\/4 {
-    width: 25%;
-  }
-
-  .mdLaptop\:w-3\/4 {
-    width: 75%;
-  }
-
   .mdLaptop\:flex-row {
     flex-direction: row;
   }
@@ -1709,28 +1594,12 @@ video {
     height: 350px;
   }
 
-  .lg\:h-screen {
-    height: 100vh;
-  }
-
-  .lg\:w-1\/4 {
-    width: 25%;
-  }
-
-  .lg\:w-3\/4 {
-    width: 75%;
-  }
-
   .lg\:w-60 {
     width: 15rem;
   }
 
   .lg\:w-72 {
     width: 18rem;
-  }
-
-  .lg\:w-\[110px\] {
-    width: 110px;
   }
 
   .lg\:w-\[200px\] {
@@ -1777,20 +1646,8 @@ video {
     width: 100%;
   }
 
-  .lg\:flex-1 {
-    flex: 1 1 0%;
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-
   .lg\:gap-20 {
     gap: 5rem;
-  }
-
-  .lg\:gap-5 {
-    gap: 1.25rem;
   }
 
   .lg\:bg-center {
