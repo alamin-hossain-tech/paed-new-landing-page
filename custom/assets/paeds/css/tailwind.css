@@ -1094,6 +1094,14 @@ video {
   width: 20rem;
 }
 
+.w-\[70px\] {
+  width: 70px;
+}
+
+.w-\[80px\] {
+  width: 80px;
+}
+
 .max-w-screen-md {
   max-width: 870px;
 }
@@ -1442,6 +1450,11 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .pb-1 {
@@ -1906,6 +1919,11 @@ video {
   .smLaptop\:py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+
+  .smLaptop\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .smLaptop\:pl-11 {
